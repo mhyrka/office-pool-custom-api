@@ -4,6 +4,11 @@ const cors = require('cors')
 const port = parseInt(process.env.PORT || 3000)
 const data = require('./app')
 
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(morgan(process.env.NODE_ENV !== 'production' ? 'dev' : 'combined'))
+app.use(cors({origin: true, credentials: true}))
+
 
 
 function filterDataById(data, id) {
