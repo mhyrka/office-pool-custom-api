@@ -257,7 +257,6 @@ const sportsData = [ [ 'Cincinnati Bengals $$ Indianapolis Colts',
 
 
 function createHomeAndAwayTeams(data) {
-  // console.log(data)
   return data.map((week, index) => {
     return {
       [`week_${index +1}`]: week.reduce((acc, current, index) => {
