@@ -20,29 +20,29 @@ router.get("/:id", (request, response, next) => {
     })
     .catch(next);
 });
-
-router.post("/", (request, response, next) => {
-    queries.create(request.body)
-    .then(game => {
-        response.status(201).json({game});
-    })
-    .catch(next);
-});
-
-router.delete("/:id", (request, response, next) => {
-    queries.delete(request.params.id)
-    .then(() => {
-        response.status(204).json({deleted: true});
-    })
-    .catch(next);
-});
-
-router.put("/:id", (request, response, next) => {
-    queries.update(request.params.id, request.body)
-    .then(game => {
-        response.json({game});
-    })
-    .catch(next);
-});
+//
+// router.post("/", (request, response, next) => {
+//     queries.create(request.body)
+//     .then(game => {
+//         response.status(201).json({game});
+//     })
+//     .catch(next);
+// });
+//
+// router.delete("/:id", (request, response, next) => {
+//     queries.delete(request.params.id)
+//     .then(() => {
+//         response.status(204).json({deleted: true});
+//     })
+//     .catch(next);
+// });
+//
+// router.put("/:id", (request, response, next) => {
+//     queries.update(request.params.id, request.body)
+//     .then(game => {
+//         response.json({game});
+//     })
+//     .catch(next);
+// });
 
 module.exports = router;
