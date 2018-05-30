@@ -25,9 +25,8 @@ app.get('/', (req, res, next) => {
 })
 
 app.get('/:week', (req, res) => {
-  console.log(req.params.week)
   let record = filterDataById(data, req.params.week)
-  console.log(record)
+
   if (!record[0]) {
     res.status(404).json({
       error: {

@@ -1,7 +1,6 @@
 {
   "name": "sportsRadarApiPractice",
   "version": "1.0.0",
-  "description": "",
   "main": "allGames.js",
   "scripts": {
     "start": "node index.js",
@@ -14,7 +13,19 @@
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.3",
+    "knex": "^0.14.6",
     "morgan": "^1.9.0",
-    "nodemon": "^1.17.4"
-  }
+    "nodemon": "^1.17.4",
+    "pg": "^7.4.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhyrka/office-pool-custom-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mhyrka/office-pool-custom-api/issues"
+  },
+  "homepage": "https://github.com/mhyrka/office-pool-custom-api#readme",
+  "description": ""
 }
